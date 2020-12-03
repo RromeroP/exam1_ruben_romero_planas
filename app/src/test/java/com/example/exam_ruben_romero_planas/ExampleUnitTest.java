@@ -1,4 +1,4 @@
-package com.example.exam1_ruben_romero_planas;
+package com.example.exam_ruben_romero_planas;
 
 import org.junit.Test;
 

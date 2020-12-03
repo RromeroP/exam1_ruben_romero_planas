@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SeekBar
+        android:id="@+id/seekbar_r"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progressTint="@color/red"
+        android:thumbTint="@color/red"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_g"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progressTint="@color/green"
+        android:thumbTint="@color/green"
+        android:layout_below="@+id/seekbar_r"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_b"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progressTint="@color/blue"
+        android:thumbTint="@color/blue"
+        android:layout_below="@+id/seekbar_g" />
+
+    <Button
+        android:id="@+id/button_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbar_b"
+        android:layout_centerHorizontal="true"
+        android:onClick="changeColor"
+        android:text="@string/change_color" />
+</RelativeLayout>
